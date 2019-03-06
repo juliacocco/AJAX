@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Wagon race</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+  <div class="container">
+    <br>
+    <h1>Welcome to The Big Race!</h1>
+    <br>
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <button id="start-session" class="btn btn-primary">Start a new game!</button>
+        <br>
+        <br>
+        <table class="racer_table hidden">
+          <thead>
+            <tr>
+              <th>START</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th>FINISH</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="player1">
+              <td class="active"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr id="player2">
+              <td class="active"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <form>
+      <input id="restart-btn" type="submit" class="btn btn-primary hidden" value="Restart">
+    </form>
+    <div class="col-xs-4 col-xs-offset-4">
+      <form id="game-form" class="form-horizontal hidden">
+        <div class="form-group">
+          <label for="player-1-name">Player 1 name: </label>
+          <input type="text" class="form-control" id="player-1-name" name="player-1-name">
+        </div>
+        <div class="form-group">
+          <label for="player-2-name">Player 2 name: </label>
+          <input type="text" class="form-control" id="player-2-name" name="player-2-name">
+        </div>
+        <input type="submit" class="btn btn-primary" id="#submit-names" value="PLAY">
+      </form>
+    </div>
+    <div class="alert text-center hidden">
+      <p>Congratulations!</p>
+    </div>
+  </div>
+
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
